@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
+		188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
 		18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */; };
 		18B9CD4D1ACB863D00A0586A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD4C1ACB863D00A0586A /* ViewController.swift */; };
 		18B9CD501ACB863D00A0586A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B9CD4E1ACB863D00A0586A /* Main.storyboard */; };
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188345901ACC95230036BC0B /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		18B9CD451ACB863D00A0586A /* ChecklistJunior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChecklistJunior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B9CD491ACB863D00A0586A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 				18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */,
 				18B9CD4C1ACB863D00A0586A /* ViewController.swift */,
 				18B9CD6A1ACB8A3B00A0586A /* ListDataSource.swift */,
+				188345901ACC95230036BC0B /* CoreDataHelper.swift */,
 				18B9CD4E1ACB863D00A0586A /* Main.storyboard */,
 				18B9CD511ACB863D00A0586A /* Images.xcassets */,
 				18B9CD531ACB863D00A0586A /* LaunchScreen.xib */,
@@ -217,6 +221,7 @@
 			files = (
 				18B9CD6B1ACB8A3B00A0586A /* ListDataSource.swift in Sources */,
 				18B9CD4D1ACB863D00A0586A /* ViewController.swift in Sources */,
+				188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
 				18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
 				18B9CD611ACB863D00A0586A /* ChecklistJuniorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +421,7 @@
 				18B9CD661ACB863D00A0586A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B9CD671ACB863D00A0586A /* Build configuration list for PBXNativeTarget "ChecklistJuniorTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +430,7 @@
 				18B9CD691ACB863D00A0586A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
