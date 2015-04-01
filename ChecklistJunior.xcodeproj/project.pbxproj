@@ -13,6 +13,7 @@
 		18B9CD521ACB863D00A0586A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B9CD511ACB863D00A0586A /* Images.xcassets */; };
 		18B9CD551ACB863D00A0586A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B9CD531ACB863D00A0586A /* LaunchScreen.xib */; };
 		18B9CD611ACB863D00A0586A /* ChecklistJuniorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD601ACB863D00A0586A /* ChecklistJuniorTests.swift */; };
+		18B9CD6B1ACB8A3B00A0586A /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD6A1ACB8A3B00A0586A /* ListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		18B9CD5A1ACB863D00A0586A /* ChecklistJuniorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecklistJuniorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B9CD5F1ACB863D00A0586A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B9CD601ACB863D00A0586A /* ChecklistJuniorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistJuniorTests.swift; sourceTree = "<group>"; };
+		18B9CD6A1ACB8A3B00A0586A /* ListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */,
 				18B9CD4C1ACB863D00A0586A /* ViewController.swift */,
+				18B9CD6A1ACB8A3B00A0586A /* ListDataSource.swift */,
 				18B9CD4E1ACB863D00A0586A /* Main.storyboard */,
 				18B9CD511ACB863D00A0586A /* Images.xcassets */,
 				18B9CD531ACB863D00A0586A /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B9CD6B1ACB8A3B00A0586A /* ListDataSource.swift in Sources */,
 				18B9CD4D1ACB863D00A0586A /* ViewController.swift in Sources */,
 				18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */,
 			);

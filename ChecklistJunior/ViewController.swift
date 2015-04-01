@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var firstImageView : UIImageView!
+    @IBOutlet var tableView : UITableView!
+    
+    var listDataSource = ListDataSource()
+    var listTableViewDelegate = ListTableViewDelegate()
     
     override func viewDidLoad() {
-        let image = UIImage(named: "Shoes.jpg")
-        firstImageView.image = image
+        self.tableView!.dataSource = listDataSource
         super.viewDidLoad()
         
     }
