@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,9 @@ class ViewController: UIViewController {
     var listTableViewDelegate = ListTableViewDelegate()
     
     override func viewDidLoad() {
+        makeFakeData()
         self.tableView!.dataSource = listDataSource
+        let coreDataHelper = CoreDataHelper()
         super.viewDidLoad()
         
     }
@@ -27,5 +30,12 @@ class ViewController: UIViewController {
     }
 
 
+    func makeFakeData(){
+        let coreDataHelper = CoreDataHelper()
+        let testList = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: coreDataHelper.managedObjectContext) as! List
+        
+        testList.name = "foo"
+        
+    }
 }
 

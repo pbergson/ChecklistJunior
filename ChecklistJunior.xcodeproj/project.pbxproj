@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
 		188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
+		188345951ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */; };
+		188345961ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */; };
+		1883459C1ACCD59C0036BC0B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883459B1ACCD59C0036BC0B /* List.swift */; };
+		1883459D1ACCD59C0036BC0B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883459B1ACCD59C0036BC0B /* List.swift */; };
 		18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */; };
 		18B9CD4D1ACB863D00A0586A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD4C1ACB863D00A0586A /* ViewController.swift */; };
 		18B9CD501ACB863D00A0586A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B9CD4E1ACB863D00A0586A /* Main.storyboard */; };
@@ -30,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		188345901ACC95230036BC0B /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		188345941ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChecklistJuniorModel.xcdatamodel; sourceTree = "<group>"; };
+		1883459B1ACCD59C0036BC0B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		18B9CD451ACB863D00A0586A /* ChecklistJunior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChecklistJunior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B9CD491ACB863D00A0586A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1883459E1ACCD5A20036BC0B /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				1883459B1ACCD59C0036BC0B /* List.swift */,
+			);
+			name = entities;
+			sourceTree = "<group>";
+		};
 		18B9CD3C1ACB863D00A0586A = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +104,8 @@
 				18B9CD511ACB863D00A0586A /* Images.xcassets */,
 				18B9CD531ACB863D00A0586A /* LaunchScreen.xib */,
 				18B9CD481ACB863D00A0586A /* Supporting Files */,
+				188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */,
+				1883459E1ACCD5A20036BC0B /* entities */,
 			);
 			path = ChecklistJunior;
 			sourceTree = "<group>";
@@ -222,7 +238,9 @@
 				18B9CD6B1ACB8A3B00A0586A /* ListDataSource.swift in Sources */,
 				18B9CD4D1ACB863D00A0586A /* ViewController.swift in Sources */,
 				188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
+				188345951ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */,
 				18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */,
+				1883459C1ACCD59C0036BC0B /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
+				1883459D1ACCD59C0036BC0B /* List.swift in Sources */,
+				188345961ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */,
 				18B9CD611ACB863D00A0586A /* ChecklistJuniorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,9 +372,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChecklistJunior/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -362,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChecklistJunior/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -383,6 +407,7 @@
 				INFOPLIST_FILE = ChecklistJuniorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChecklistJunior.app/ChecklistJunior";
 			};
 			name = Debug;
@@ -391,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -433,6 +459,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				188345941ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodel */,
+			);
+			currentVersion = 188345941ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodel */;
+			path = ChecklistJuniorModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18B9CD3D1ACB863D00A0586A /* Project object */;
 }
