@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         let coreDataHelper = CoreDataHelper()
         let testList = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: coreDataHelper.managedObjectContext) as! List
         
-        testList.name = "foo"
+        testList.listName = "foo"
+        coreDataHelper.managedObjectContext.save(nil);
         
     }
 }

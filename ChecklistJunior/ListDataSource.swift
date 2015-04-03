@@ -13,25 +13,27 @@ import CoreData
 class ListDataSource : NSObject, UITableViewDataSource {
     
     let coreDataHelper = CoreDataHelper()
+    var fetchedResultsController : NSFetchedResultsController
+    
+    override init() {
+        self.fetchedResultsController = self.coreDataHelper.fetchedResultsControllerForLists()
+        self.fetchedResultsController.performFetch(nil)
+        super.init()
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier") as! UITableViewCell
-        cell.backgroundColor = UIColor.redColor()
+        
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let fetchedLists = coreDataHelper.fetchEntities("List")
-        let numberOfRows: Int
-        if let validLists = fetchedLists {
-            numberOfRows = validLists.count
+        if let numberOfRows = self.fetchedResultsController.fetchedObjects?.count {
+            return numberOfRows
         } else {
-            numberOfRows = 0
+            return 0
         }
-        return numberOfRows
     }
-    
-    
 }
 
 class ListTableViewDelegate {

@@ -35,6 +35,12 @@ public class CoreDataHelper {
         return fetchedResults
     }
     
+    func fetchedResultsControllerForLists()-> NSFetchedResultsController {
+        let fetchRequest = NSFetchRequest(entityName:"List")
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+        return controller
+    }
+    
     public class func sharedCoreDataHelper() -> CoreDataHelper {
         return mySharedCoreDataHelper
     }

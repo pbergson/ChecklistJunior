@@ -10,15 +10,5 @@ import Foundation
 import CoreData
 
 class List: NSManagedObject {
-    @NSManaged var name : String {
-        get {
-            return self.name
-        }
-        set (steps){
-            let defaults: NSUserDefaults = NSUserDefaults(suiteName: "group.com.heliumfoot.FitFight")!
-            
-            defaults.setInteger(steps, forKey: kNumberOfStepsDefaultsKey)
-        }
-    
-    
+    @NSManaged var listName : String
 }
