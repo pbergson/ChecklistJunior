@@ -37,6 +37,8 @@ public class CoreDataHelper {
     
     func fetchedResultsControllerForLists()-> NSFetchedResultsController {
         let fetchRequest = NSFetchRequest(entityName:"List")
+        let sortDescriptor = NSSortDescriptor(key: "listName", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
         return controller
     }

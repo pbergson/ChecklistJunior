@@ -23,6 +23,8 @@ class ListDataSource : NSObject, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier") as! UITableViewCell
+        let list = self.fetchedResultsController.objectAtIndexPath(indexPath) as! List
+        cell.textLabel?.text = list.listName
         
         return cell
     }
