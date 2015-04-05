@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet var tableView : UITableView!
     
     var listDataSource = ListDataSource()
-    var listTableViewDelegate = ListTableViewDelegate()
     
     override func viewDidLoad() {
         makeFakeData()

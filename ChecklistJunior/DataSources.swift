@@ -1,5 +1,5 @@
 //
-//  DataSource.swift
+//  DataSources.swift
 //  ChecklistJunior
 //
 //  Created by Pamela Bergson on 3/31/15.
@@ -22,7 +22,7 @@ class ListDataSource : NSObject, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(ReuseIdentifiers.ChecklistMainCell) as! UITableViewCell
         let list = self.fetchedResultsController.objectAtIndexPath(indexPath) as! List
         cell.textLabel?.text = list.listName
         
@@ -38,6 +38,15 @@ class ListDataSource : NSObject, UITableViewDataSource {
     }
 }
 
-class ListTableViewDelegate {
+class ListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ReuseIdentifiers.CollectionCell, forIndexPath: indexPath) as! UICollectionViewCell
+        return cell
+    }
 }
+
