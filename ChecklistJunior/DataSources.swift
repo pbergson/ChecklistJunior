@@ -40,8 +40,22 @@ class ListDataSource : NSObject, UITableViewDataSource {
 
 class ListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
+    let coreDataHelper = CoreDataHelper()
+    var fetchedResultsController : NSFetchedResultsController
+    
+    override init() {
+        self.fetchedResultsController = coreDataHelper.fetchedResultsControllerForTasks()
+        self.fetchedResultsController.performFetch(nil)
+        //TODO error handling
+        super.init()
+    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        if let numberOfItems = self.fetchedResultsController.fetchedObjects?.count {
+            return numberOfItems
+        } else {
+            return 0
+        }
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

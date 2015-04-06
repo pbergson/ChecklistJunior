@@ -43,6 +43,14 @@ public class CoreDataHelper {
         return controller
     }
     
+    func fetchedResultsControllerForTasks()->NSFetchedResultsController {
+        let fetchRequest = NSFetchRequest(entityName: "Task")
+        let sortDescriptor = NSSortDescriptor(key: "taskName", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor];
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: "inList", cacheName: nil)
+        return controller
+    }
+    
     public class func sharedCoreDataHelper() -> CoreDataHelper {
         return mySharedCoreDataHelper
     }

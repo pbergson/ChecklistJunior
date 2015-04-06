@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     var listDataSource = ListDataSource()
     
     override func viewDidLoad() {
-        makeFakeData()
+        let faker = DataFaker()
+        faker.fakeListItem()
         self.tableView!.dataSource = listDataSource
         let coreDataHelper = CoreDataHelper()
         super.viewDidLoad()
@@ -26,16 +27,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-
-    func makeFakeData(){
-        let coreDataHelper = CoreDataHelper()
-        let testList = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: coreDataHelper.managedObjectContext) as! List
-        
-        testList.listName = "foo"
-        coreDataHelper.managedObjectContext.save(nil);
-        
     }
 }
 

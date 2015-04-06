@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1840A8291AD3265C0005C11A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A8281AD3265C0005C11A /* Task.swift */; };
+		1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A82A1AD326A30005C11A /* DataFaker.swift */; };
 		188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
 		188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
 		188345951ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1840A8281AD3265C0005C11A /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		1840A82A1AD326A30005C11A /* DataFaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
 		188345901ACC95230036BC0B /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		188345941ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChecklistJuniorModel.xcdatamodel; sourceTree = "<group>"; };
 		1883459B1ACCD59C0036BC0B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				1883459B1ACCD59C0036BC0B /* List.swift */,
+				1840A8281AD3265C0005C11A /* Task.swift */,
 			);
 			name = entities;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				18B9CD481ACB863D00A0586A /* Supporting Files */,
 				188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */,
 				1883459E1ACCD5A20036BC0B /* entities */,
+				1840A82A1AD326A30005C11A /* DataFaker.swift */,
 			);
 			path = ChecklistJunior;
 			sourceTree = "<group>";
@@ -246,8 +252,10 @@
 				188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
 				18EC8BA11AD0CD6000BF2D64 /* ListCollectionViewController.swift in Sources */,
 				188345951ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */,
+				1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */,
 				18EC8BA31AD1B54800BF2D64 /* DefinedConstants.swift in Sources */,
 				18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */,
+				1840A8291AD3265C0005C11A /* Task.swift in Sources */,
 				1883459C1ACCD59C0036BC0B /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
