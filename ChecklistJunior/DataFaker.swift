@@ -11,7 +11,7 @@ import CoreData
 
 class DataFaker {
     func fakeListItem(){
-        let coreDataHelper = CoreDataHelper()
+        let coreDataHelper = CoreDataHelper.sharedCoreDataHelper()
         let testList = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: coreDataHelper.managedObjectContext) as! List
         
         testList.listName = "foo"
@@ -23,7 +23,7 @@ class DataFaker {
     }
     
     func fakeTaskForList(list: List, name: String) {
-        let coreDataHelper = CoreDataHelper()
+        let coreDataHelper = CoreDataHelper.sharedCoreDataHelper()
         let fakeTask = NSEntityDescription.insertNewObjectForEntityForName("Task", inManagedObjectContext: coreDataHelper.managedObjectContext) as! Task
         fakeTask.taskName = name
         fakeTask.inList = list

@@ -12,7 +12,7 @@ import CoreData
 
 class ListDataSource : NSObject, UITableViewDataSource {
     
-    let coreDataHelper = CoreDataHelper()
+    let coreDataHelper = CoreDataHelper.sharedCoreDataHelper()
     var fetchedResultsController : NSFetchedResultsController
     
     override init() {
@@ -40,7 +40,7 @@ class ListDataSource : NSObject, UITableViewDataSource {
 
 class ListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
-    let coreDataHelper = CoreDataHelper()
+    let coreDataHelper = CoreDataHelper.sharedCoreDataHelper()
     var fetchedResultsController : NSFetchedResultsController
     
     override init() {
