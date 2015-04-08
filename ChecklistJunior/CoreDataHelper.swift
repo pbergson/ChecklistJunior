@@ -35,7 +35,7 @@ public class CoreDataHelper {
         return fetchedResults
     }
     
-    func fetchedResultsControllerForLists()-> NSFetchedResultsController {
+    public func fetchedResultsControllerForLists()-> NSFetchedResultsController {
         let fetchRequest = NSFetchRequest(entityName:"List")
         let sortDescriptor = NSSortDescriptor(key: "listName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -43,7 +43,7 @@ public class CoreDataHelper {
         return controller
     }
     
-    func fetchedResultsControllerForTasks()->NSFetchedResultsController {
+    public func fetchedResultsControllerForTasks()->NSFetchedResultsController {
         let fetchRequest = NSFetchRequest(entityName: "Task")
         let sortDescriptor = NSSortDescriptor(key: "taskName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor];
