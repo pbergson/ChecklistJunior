@@ -24,14 +24,14 @@ struct EntityHelperForTests {
             return managedObjectContext
     }
     
-    func listWithName(name:String, inContext:NSManagedObjectContext) -> List {
-        let list = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: inContext) as! List
+    func listWithName(name:String, inContext:NSManagedObjectContext) -> List? {
+        let list = List(context: inContext)
         list.listName = name
         return list
     }
     
     func taskWithName(name:String, inContext:NSManagedObjectContext) -> Task {
-        let task = NSEntityDescription.insertNewObjectForEntityForName("Task", inManagedObjectContext: inContext) as! Task
+        let task = Task(context: inContext)
         task.taskName = name
         return task
     }

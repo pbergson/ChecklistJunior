@@ -11,4 +11,9 @@ import CoreData
 
 class List: NSManagedObject {
     @NSManaged var listName : String
+    
+    convenience init(context: NSManagedObjectContext) {
+        let entityDescription = NSEntityDescription.entityForName("List", inManagedObjectContext: context)!
+        self.init(entity: entityDescription, insertIntoManagedObjectContext: context)
+    }
 }

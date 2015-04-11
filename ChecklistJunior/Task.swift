@@ -14,4 +14,9 @@ class Task: NSManagedObject {
     @NSManaged var completedStatus: Bool
     @NSManaged var imageURL : String
     @NSManaged var inList : List
+    
+    convenience init(context: NSManagedObjectContext) {
+        let entityDescription = NSEntityDescription.entityForName("Task", inManagedObjectContext: context)!
+        self.init(entity: entityDescription, insertIntoManagedObjectContext: context)
+    }
 }
