@@ -17,16 +17,26 @@ class ListDataSource : NSObject, UITableViewDataSource {
     
     override init() {
         self.fetchedResultsController = self.coreDataHelper.fetchedResultsControllerForLists()
-        self.fetchedResultsController.performFetch(nil)
+        do {
+            try self.fetchedResultsController.performFetch()
+        } catch _ {
+        }
         super.init()
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(ReuseIdentifiers.ChecklistMainCell) as! UITableViewCell
-        let list = self.fetchedResultsController.objectAtIndexPath(indexPath) as! List
-        cell.textLabel?.text = list.listName
+        var cellToReturn : UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(ReuseIdentifiers.ChecklistMainCell)
+        if let realCell = cell {
+            cellToReturn = realCell
+        } else {
+            print("couldn't dequeue main cell")
+            cellToReturn = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: ReuseIdentifiers.ChecklistMainCell)
+        }
         
-        return cell
+        let list = self.fetchedResultsController.objectAtIndexPath(indexPath) as! List
+        cellToReturn.textLabel?.text = list.listName
+        return cellToReturn
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,7 +55,10 @@ class ListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
     override init() {
         self.fetchedResultsController = coreDataHelper.fetchedResultsControllerForTasks()
-        self.fetchedResultsController.performFetch(nil)
+        do {
+            try self.fetchedResultsController.performFetch()
+        } catch _ {
+        }
         //TODO error handling
         super.init()
     }
@@ -59,7 +72,7 @@ class ListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ReuseIdentifiers.CollectionCell, forIndexPath: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ReuseIdentifiers.CollectionCell, forIndexPath: indexPath) 
         return cell
     }
 }

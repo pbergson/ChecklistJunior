@@ -25,13 +25,13 @@ public class CoreDataHelper {
             //TODO fix unwrapping
         }
     
-        self.managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.storeURL(), options: nil, error:nil)
+        try? self.managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.storeURL(), options: nil)
         //TODO how to do errors here?
     }
     
     func fetchEntities(name:String) -> [AnyObject]? {
         let fetchRequest = NSFetchRequest(entityName:name)
-        let fetchedResults = self.managedObjectContext.executeFetchRequest(fetchRequest, error: nil)
+        let fetchedResults = try? self.managedObjectContext.executeFetchRequest(fetchRequest)
         return fetchedResults
     }
     
@@ -58,7 +58,7 @@ public class CoreDataHelper {
 
 extension CoreDataHelper {
     func storeURL () -> NSURL? {
-        let documentsDirectoryURL = NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true, error:nil)
+        let documentsDirectoryURL = try? NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: true)
         
         return documentsDirectoryURL?.URLByAppendingPathComponent("db.sqlite")
     }

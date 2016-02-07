@@ -20,7 +20,7 @@ struct EntityHelperForTests {
             //TODO fix unwrapping
         }
         
-        managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSInMemoryStoreType, configuration: nil, URL: nil, options: nil, error: nil);
+        try? managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSInMemoryStoreType, configuration: nil, URL: nil, options: nil);
             return managedObjectContext
     }
     

@@ -18,7 +18,10 @@ class DataFaker {
         
         self.fakeTaskForList(testList, name:"bar")
         self.fakeTaskForList(testList, name: "baz")
-        coreDataHelper.managedObjectContext.save(nil);
+        do {
+            try coreDataHelper.managedObjectContext.save()
+        } catch _ {
+        };
         
     }
     

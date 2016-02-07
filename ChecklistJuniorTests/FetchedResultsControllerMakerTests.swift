@@ -30,7 +30,10 @@ class FetchedResultsControllerMakerTests: XCTestCase {
         
         let maker = FetchedResultsControllerMaker(managedObjectContext: managedObjectContext)
         let controller = maker.fetchedResultsControllerForLists()
-        controller.performFetch(nil)
+        do {
+            try controller.performFetch()
+        } catch _ {
+        }
         XCTAssert(controller.fetchedObjects!.count == 2)
     }
 
