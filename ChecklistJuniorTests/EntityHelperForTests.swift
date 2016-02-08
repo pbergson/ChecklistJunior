@@ -20,8 +20,13 @@ struct EntityHelperForTests {
             //TODO fix unwrapping
         }
         
-        try? managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSInMemoryStoreType, configuration: nil, URL: nil, options: nil);
+        do {
+            try managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSInMemoryStoreType, configuration: nil, URL: nil, options: nil);
             return managedObjectContext
+        } catch {
+            
+        }
+        
     }
     
     func listWithName(name:String, inContext:NSManagedObjectContext) -> List? {
