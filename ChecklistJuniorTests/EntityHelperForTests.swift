@@ -17,16 +17,12 @@ struct EntityHelperForTests {
         if let validURL = modelURL {
             let model = NSManagedObjectModel(contentsOfURL: validURL)
             managedObjectContext.persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model!)
-            //TODO fix unwrapping
-        }
-        
-        do {
-            try managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSInMemoryStoreType, configuration: nil, URL: nil, options: nil);
             return managedObjectContext
-        } catch {
-            
+        } else {
+            print("failed to make managed object context")
+            let emptyContext = NSManagedObjectContext()
+            return emptyContext
         }
-        
     }
     
     func listWithName(name:String, inContext:NSManagedObjectContext) -> List? {
