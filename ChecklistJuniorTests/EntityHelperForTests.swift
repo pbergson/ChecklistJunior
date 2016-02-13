@@ -20,7 +20,7 @@ struct EntityHelperForTests {
             return managedObjectContext
         } else {
             print("failed to make managed object context")
-            let emptyContext = NSManagedObjectContext()
+            let emptyContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
             return emptyContext
         }
     }

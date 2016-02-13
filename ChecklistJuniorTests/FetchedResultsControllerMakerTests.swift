@@ -25,8 +25,8 @@ class FetchedResultsControllerMakerTests: XCTestCase {
         
         let entityHelper = EntityHelperForTests()
         let managedObjectContext = EntityHelperForTests.makeManagedObjectContext()
-        let list = entityHelper.listWithName("foo", inContext: managedObjectContext)
-        let listTwo = entityHelper.listWithName("bar", inContext: managedObjectContext)
+        _ = entityHelper.listWithName("foo", inContext: managedObjectContext)
+        _ = entityHelper.listWithName("bar", inContext: managedObjectContext)
         
         let maker = FetchedResultsControllerMaker(managedObjectContext: managedObjectContext)
         let controller = maker.fetchedResultsControllerForLists()

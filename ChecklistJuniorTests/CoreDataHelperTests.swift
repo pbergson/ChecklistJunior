@@ -24,7 +24,7 @@ class CoreDataHelperTests: XCTestCase {
 
     func testTaskFetchedResultsControllerReturnsTasks() {
         
-        let coreDataHelper = CoreDataHelper()
+        _ = CoreDataHelper()
     }
   
 

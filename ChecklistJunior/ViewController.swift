@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let faker = DataFaker()
         faker.fakeListItem()
         self.tableView!.dataSource = listDataSource
-        let coreDataHelper = CoreDataHelper.sharedCoreDataHelper()
+        _ = CoreDataHelper.sharedCoreDataHelper()
         super.viewDidLoad()
         
     }
