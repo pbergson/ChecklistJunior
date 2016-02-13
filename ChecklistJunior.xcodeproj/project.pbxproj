@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D3AF51C6ED93A00A2BBE7 /* SingleItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D3AF41C6ED93A00A2BBE7 /* SingleItemViewController.swift */; };
 		1840A8291AD3265C0005C11A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A8281AD3265C0005C11A /* Task.swift */; };
 		1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A82A1AD326A30005C11A /* DataFaker.swift */; };
 		185705AD1AD488D3002F2E6F /* CoreDataHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180D3AF41C6ED93A00A2BBE7 /* SingleItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleItemViewController.swift; sourceTree = "<group>"; };
 		1840A8281AD3265C0005C11A /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		1840A82A1AD326A30005C11A /* DataFaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
 		185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelperTests.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				18EC8BA01AD0CD6000BF2D64 /* ListCollectionViewController.swift */,
 				18B9CD4C1ACB863D00A0586A /* ViewController.swift */,
+				180D3AF41C6ED93A00A2BBE7 /* SingleItemViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
 				18EC8BA11AD0CD6000BF2D64 /* ListCollectionViewController.swift in Sources */,
 				188345951ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */,
+				180D3AF51C6ED93A00A2BBE7 /* SingleItemViewController.swift in Sources */,
 				1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */,
 				18EC8BA31AD1B54800BF2D64 /* DefinedConstants.swift in Sources */,
 				18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */,
