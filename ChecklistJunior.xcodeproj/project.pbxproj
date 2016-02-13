@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1840A8291AD3265C0005C11A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A8281AD3265C0005C11A /* Task.swift */; };
+		1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A82A1AD326A30005C11A /* DataFaker.swift */; };
+		185705AD1AD488D3002F2E6F /* CoreDataHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */; };
+		185705AF1AD489AE002F2E6F /* EntityHelperForTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185705AE1AD489AE002F2E6F /* EntityHelperForTests.swift */; };
+		1860E8D11AD7526C0022D29C /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860E8D01AD7526C0022D29C /* TaskCollectionViewCell.swift */; };
+		188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
+		188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188345901ACC95230036BC0B /* CoreDataHelper.swift */; };
+		188345951ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */; };
+		188345961ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */; };
+		1883459C1ACCD59C0036BC0B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883459B1ACCD59C0036BC0B /* List.swift */; };
+		1883459D1ACCD59C0036BC0B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883459B1ACCD59C0036BC0B /* List.swift */; };
 		18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */; };
 		18B9CD4D1ACB863D00A0586A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD4C1ACB863D00A0586A /* ViewController.swift */; };
 		18B9CD501ACB863D00A0586A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B9CD4E1ACB863D00A0586A /* Main.storyboard */; };
 		18B9CD521ACB863D00A0586A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B9CD511ACB863D00A0586A /* Images.xcassets */; };
 		18B9CD551ACB863D00A0586A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B9CD531ACB863D00A0586A /* LaunchScreen.xib */; };
-		18B9CD611ACB863D00A0586A /* ChecklistJuniorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD601ACB863D00A0586A /* ChecklistJuniorTests.swift */; };
-		18B9CD6B1ACB8A3B00A0586A /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD6A1ACB8A3B00A0586A /* ListDataSource.swift */; };
+		18B9CD6B1ACB8A3B00A0586A /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9CD6A1ACB8A3B00A0586A /* DataSources.swift */; };
+		18CAEDCE1AD5D56C00326EC0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A8281AD3265C0005C11A /* Task.swift */; };
+		18CAEDD01AD5D71000326EC0 /* FetchedResultsControllerMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAEDCF1AD5D71000326EC0 /* FetchedResultsControllerMaker.swift */; };
+		18CAEDD21AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAEDD11AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift */; };
+		18CAEDD31AD5DC1A00326EC0 /* FetchedResultsControllerMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAEDCF1AD5D71000326EC0 /* FetchedResultsControllerMaker.swift */; };
+		18EC8BA11AD0CD6000BF2D64 /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC8BA01AD0CD6000BF2D64 /* ListCollectionViewController.swift */; };
+		18EC8BA31AD1B54800BF2D64 /* DefinedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC8BA21AD1B54800BF2D64 /* DefinedConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1840A8281AD3265C0005C11A /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		1840A82A1AD326A30005C11A /* DataFaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
+		185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelperTests.swift; sourceTree = "<group>"; };
+		185705AE1AD489AE002F2E6F /* EntityHelperForTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityHelperForTests.swift; sourceTree = "<group>"; };
+		1860E8D01AD7526C0022D29C /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		188345901ACC95230036BC0B /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		188345941ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChecklistJuniorModel.xcdatamodel; sourceTree = "<group>"; };
+		1883459B1ACCD59C0036BC0B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		18B9CD451ACB863D00A0586A /* ChecklistJunior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChecklistJunior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B9CD491ACB863D00A0586A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +60,11 @@
 		18B9CD541ACB863D00A0586A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		18B9CD5A1ACB863D00A0586A /* ChecklistJuniorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChecklistJuniorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B9CD5F1ACB863D00A0586A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18B9CD601ACB863D00A0586A /* ChecklistJuniorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistJuniorTests.swift; sourceTree = "<group>"; };
-		18B9CD6A1ACB8A3B00A0586A /* ListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
+		18B9CD6A1ACB8A3B00A0586A /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
+		18CAEDCF1AD5D71000326EC0 /* FetchedResultsControllerMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerMaker.swift; sourceTree = "<group>"; };
+		18CAEDD11AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerMakerTests.swift; sourceTree = "<group>"; };
+		18EC8BA01AD0CD6000BF2D64 /* ListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
+		18EC8BA21AD1B54800BF2D64 /* DefinedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinedConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1860E8D21AD752740022D29C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1860E8D01AD7526C0022D29C /* TaskCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1883459E1ACCD5A20036BC0B /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				1883459B1ACCD59C0036BC0B /* List.swift */,
+				1840A8281AD3265C0005C11A /* Task.swift */,
+			);
+			name = entities;
+			sourceTree = "<group>";
+		};
 		18B9CD3C1ACB863D00A0586A = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +123,17 @@
 		18B9CD471ACB863D00A0586A /* ChecklistJunior */ = {
 			isa = PBXGroup;
 			children = (
+				18CAEDD51AD5DCCC00326EC0 /* CoreData */,
+				18CAEDD41AD5DCB700326EC0 /* ViewControllers */,
 				18B9CD4A1ACB863D00A0586A /* AppDelegate.swift */,
-				18B9CD4C1ACB863D00A0586A /* ViewController.swift */,
-				18B9CD6A1ACB8A3B00A0586A /* ListDataSource.swift */,
-				18B9CD4E1ACB863D00A0586A /* Main.storyboard */,
+				18EC8BA21AD1B54800BF2D64 /* DefinedConstants.swift */,
+				18B9CD6A1ACB8A3B00A0586A /* DataSources.swift */,
 				18B9CD511ACB863D00A0586A /* Images.xcassets */,
 				18B9CD531ACB863D00A0586A /* LaunchScreen.xib */,
+				18B9CD4E1ACB863D00A0586A /* Main.storyboard */,
+				1860E8D21AD752740022D29C /* Views */,
 				18B9CD481ACB863D00A0586A /* Supporting Files */,
+				1840A82A1AD326A30005C11A /* DataFaker.swift */,
 			);
 			path = ChecklistJunior;
 			sourceTree = "<group>";
@@ -101,8 +149,10 @@
 		18B9CD5D1ACB863D00A0586A /* ChecklistJuniorTests */ = {
 			isa = PBXGroup;
 			children = (
-				18B9CD601ACB863D00A0586A /* ChecklistJuniorTests.swift */,
 				18B9CD5E1ACB863D00A0586A /* Supporting Files */,
+				185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */,
+				18CAEDD11AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift */,
+				185705AE1AD489AE002F2E6F /* EntityHelperForTests.swift */,
 			);
 			path = ChecklistJuniorTests;
 			sourceTree = "<group>";
@@ -113,6 +163,26 @@
 				18B9CD5F1ACB863D00A0586A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18CAEDD41AD5DCB700326EC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18EC8BA01AD0CD6000BF2D64 /* ListCollectionViewController.swift */,
+				18B9CD4C1ACB863D00A0586A /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18CAEDD51AD5DCCC00326EC0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */,
+				1883459E1ACCD5A20036BC0B /* entities */,
+				188345901ACC95230036BC0B /* CoreDataHelper.swift */,
+				18CAEDCF1AD5D71000326EC0 /* FetchedResultsControllerMaker.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +229,9 @@
 		18B9CD3D1ACB863D00A0586A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = com.mcmxcix;
 				TargetAttributes = {
 					18B9CD441ACB863D00A0586A = {
@@ -215,9 +287,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B9CD6B1ACB8A3B00A0586A /* ListDataSource.swift in Sources */,
+				18CAEDD01AD5D71000326EC0 /* FetchedResultsControllerMaker.swift in Sources */,
+				18B9CD6B1ACB8A3B00A0586A /* DataSources.swift in Sources */,
 				18B9CD4D1ACB863D00A0586A /* ViewController.swift in Sources */,
+				188345911ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
+				18EC8BA11AD0CD6000BF2D64 /* ListCollectionViewController.swift in Sources */,
+				188345951ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */,
+				1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */,
+				18EC8BA31AD1B54800BF2D64 /* DefinedConstants.swift in Sources */,
 				18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */,
+				1860E8D11AD7526C0022D29C /* TaskCollectionViewCell.swift in Sources */,
+				1840A8291AD3265C0005C11A /* Task.swift in Sources */,
+				1883459C1ACCD59C0036BC0B /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B9CD611ACB863D00A0586A /* ChecklistJuniorTests.swift in Sources */,
+				185705AF1AD489AE002F2E6F /* EntityHelperForTests.swift in Sources */,
+				188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
+				18CAEDD21AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift in Sources */,
+				1883459D1ACCD59C0036BC0B /* List.swift in Sources */,
+				185705AD1AD488D3002F2E6F /* CoreDataHelperTests.swift in Sources */,
+				18CAEDCE1AD5D56C00326EC0 /* Task.swift in Sources */,
+				188345961ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */,
+				18CAEDD31AD5DC1A00326EC0 /* FetchedResultsControllerMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +368,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -346,9 +435,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChecklistJunior/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MCMXCIX.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,8 +448,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChecklistJunior/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MCMXCIX.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -366,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -376,7 +471,9 @@
 				);
 				INFOPLIST_FILE = ChecklistJuniorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MCMXCIX.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChecklistJunior.app/ChecklistJunior";
 			};
 			name = Debug;
@@ -385,12 +482,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ChecklistJuniorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MCMXCIX.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChecklistJunior.app/ChecklistJunior";
 			};
@@ -415,6 +514,7 @@
 				18B9CD661ACB863D00A0586A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B9CD671ACB863D00A0586A /* Build configuration list for PBXNativeTarget "ChecklistJuniorTests" */ = {
 			isa = XCConfigurationList;
@@ -423,8 +523,22 @@
 				18B9CD691ACB863D00A0586A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		188345931ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				188345941ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodel */,
+			);
+			currentVersion = 188345941ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodel */;
+			path = ChecklistJuniorModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18B9CD3D1ACB863D00A0586A /* Project object */;
 }

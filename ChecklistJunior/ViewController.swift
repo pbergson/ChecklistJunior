@@ -7,16 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
     @IBOutlet var tableView : UITableView!
     
     var listDataSource = ListDataSource()
-    var listTableViewDelegate = ListTableViewDelegate()
     
     override func viewDidLoad() {
+        let faker = DataFaker()
+        faker.fakeListItem()
         self.tableView!.dataSource = listDataSource
+        let coreDataHelper = CoreDataHelper.sharedCoreDataHelper()
         super.viewDidLoad()
         
     }
@@ -25,7 +28,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
