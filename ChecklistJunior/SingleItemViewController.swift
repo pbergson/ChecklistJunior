@@ -13,8 +13,13 @@ class SingleItemViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var taskLabel: UILabel!
+    //let tapGestureRecognizer = UITapGestureRecognizer()
     
     override func viewDidLoad() {
+        //tapGestureRecognizer.addTarget(self, action: "didReceiveTap:")
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "didReceiveTap:")
+        self.view.addGestureRecognizer(tapGestureRecognizer)
         super.viewDidLoad()
     }
     
@@ -23,5 +28,8 @@ class SingleItemViewController: UIViewController {
         self.imageView!.image = UIImage(named: "Shoes")
     }
 
+    func didReceiveTap(gestureRecognizer:UITapGestureRecognizer){
+        print("got it")
+    }
 
 }
