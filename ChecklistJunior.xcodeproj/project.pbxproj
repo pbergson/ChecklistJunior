@@ -10,6 +10,9 @@
 		180D3AF51C6ED93A00A2BBE7 /* SingleItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D3AF41C6ED93A00A2BBE7 /* SingleItemViewController.swift */; };
 		180D3AF91C710F4300A2BBE7 /* InitialData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180D3AF81C710F4300A2BBE7 /* InitialData.plist */; };
 		180D3AFA1C710F4300A2BBE7 /* InitialData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180D3AF81C710F4300A2BBE7 /* InitialData.plist */; };
+		180D3AFC1C7173C900A2BBE7 /* DataImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D3AFB1C7173C900A2BBE7 /* DataImporter.swift */; };
+		180D3AFD1C7173C900A2BBE7 /* DataImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D3AFB1C7173C900A2BBE7 /* DataImporter.swift */; };
+		180D3AFF1C71746E00A2BBE7 /* DataImporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D3AFE1C71746E00A2BBE7 /* DataImporterTests.swift */; };
 		1840A8291AD3265C0005C11A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A8281AD3265C0005C11A /* Task.swift */; };
 		1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840A82A1AD326A30005C11A /* DataFaker.swift */; };
 		185705AD1AD488D3002F2E6F /* CoreDataHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */; };
@@ -48,6 +51,8 @@
 /* Begin PBXFileReference section */
 		180D3AF41C6ED93A00A2BBE7 /* SingleItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleItemViewController.swift; sourceTree = "<group>"; };
 		180D3AF81C710F4300A2BBE7 /* InitialData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InitialData.plist; sourceTree = "<group>"; };
+		180D3AFB1C7173C900A2BBE7 /* DataImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataImporter.swift; sourceTree = "<group>"; };
+		180D3AFE1C71746E00A2BBE7 /* DataImporterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataImporterTests.swift; sourceTree = "<group>"; };
 		1840A8281AD3265C0005C11A /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		1840A82A1AD326A30005C11A /* DataFaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFaker.swift; sourceTree = "<group>"; };
 		185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelperTests.swift; sourceTree = "<group>"; };
@@ -90,6 +95,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1828C8ED1C72BFE700B98D0E /* CoreDataAndImports */ = {
+			isa = PBXGroup;
+			children = (
+				180D3AFE1C71746E00A2BBE7 /* DataImporterTests.swift */,
+				185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */,
+				18CAEDD11AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift */,
+				185705AE1AD489AE002F2E6F /* EntityHelperForTests.swift */,
+			);
+			name = CoreDataAndImports;
+			sourceTree = "<group>";
+		};
 		1860E8D21AD752740022D29C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,10 +171,8 @@
 		18B9CD5D1ACB863D00A0586A /* ChecklistJuniorTests */ = {
 			isa = PBXGroup;
 			children = (
+				1828C8ED1C72BFE700B98D0E /* CoreDataAndImports */,
 				18B9CD5E1ACB863D00A0586A /* Supporting Files */,
-				185705AC1AD488D3002F2E6F /* CoreDataHelperTests.swift */,
-				18CAEDD11AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift */,
-				185705AE1AD489AE002F2E6F /* EntityHelperForTests.swift */,
 			);
 			path = ChecklistJuniorTests;
 			sourceTree = "<group>";
@@ -188,6 +202,7 @@
 				1883459E1ACCD5A20036BC0B /* entities */,
 				188345901ACC95230036BC0B /* CoreDataHelper.swift */,
 				18CAEDCF1AD5D71000326EC0 /* FetchedResultsControllerMaker.swift */,
+				180D3AFB1C7173C900A2BBE7 /* DataImporter.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -305,6 +320,7 @@
 				180D3AF51C6ED93A00A2BBE7 /* SingleItemViewController.swift in Sources */,
 				1840A82B1AD326A30005C11A /* DataFaker.swift in Sources */,
 				18EC8BA31AD1B54800BF2D64 /* DefinedConstants.swift in Sources */,
+				180D3AFC1C7173C900A2BBE7 /* DataImporter.swift in Sources */,
 				18B9CD4B1ACB863D00A0586A /* AppDelegate.swift in Sources */,
 				1860E8D11AD7526C0022D29C /* TaskCollectionViewCell.swift in Sources */,
 				1840A8291AD3265C0005C11A /* Task.swift in Sources */,
@@ -317,11 +333,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				185705AF1AD489AE002F2E6F /* EntityHelperForTests.swift in Sources */,
+				180D3AFF1C71746E00A2BBE7 /* DataImporterTests.swift in Sources */,
 				188345921ACC95230036BC0B /* CoreDataHelper.swift in Sources */,
 				18CAEDD21AD5D91600326EC0 /* FetchedResultsControllerMakerTests.swift in Sources */,
 				1883459D1ACCD59C0036BC0B /* List.swift in Sources */,
 				185705AD1AD488D3002F2E6F /* CoreDataHelperTests.swift in Sources */,
 				18CAEDCE1AD5D56C00326EC0 /* Task.swift in Sources */,
+				180D3AFD1C7173C900A2BBE7 /* DataImporter.swift in Sources */,
 				188345961ACC98E00036BC0B /* ChecklistJuniorModel.xcdatamodeld in Sources */,
 				18CAEDD31AD5DC1A00326EC0 /* FetchedResultsControllerMaker.swift in Sources */,
 			);
