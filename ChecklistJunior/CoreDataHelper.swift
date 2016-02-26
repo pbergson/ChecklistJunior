@@ -25,8 +25,11 @@ public class CoreDataHelper {
             //TODO fix unwrapping
         }
     
-        try? self.managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.storeURL(), options: nil)
-        //TODO how to do errors here?
+        do {
+          let _ = try self.managedObjectContext.persistentStoreCoordinator?.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.storeURL(), options: nil)
+        } catch {
+            print("error adding persistent store")
+        }
     }
     
     func fetchEntities(name:String) -> [AnyObject]? {
