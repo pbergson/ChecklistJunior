@@ -7,8 +7,16 @@
 //
 
 import Foundation
+import CoreData
 
 struct DataImporter {
+    
+    let managedObjectContext : NSManagedObjectContext
+    
+    init(managedObjectContext:NSManagedObjectContext){
+        self.managedObjectContext = managedObjectContext
+    }
+    
     func arrayFromPlist(filepath:String) -> [NSDictionary]? {
         print(filepath)
         let data = NSDictionary(contentsOfFile: filepath)
@@ -25,6 +33,5 @@ struct DataImporter {
             return nil
         }
     }
-    
-    //func taskFrom
+
 }

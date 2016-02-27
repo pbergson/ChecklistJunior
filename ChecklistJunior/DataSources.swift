@@ -26,12 +26,12 @@ class ListDataSource : NSObject, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cellToReturn : UITableViewCell
-        let cell = tableView.dequeueReusableCellWithIdentifier(ReuseIdentifiers.ChecklistMainCell)
+        let cell = tableView.dequeueReusableCellWithIdentifier(ReuseIdentifiers.ChecklistMainCell.rawValue)
         if let realCell = cell {
             cellToReturn = realCell
         } else {
             print("couldn't dequeue main cell")
-            cellToReturn = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: ReuseIdentifiers.ChecklistMainCell)
+            cellToReturn = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: ReuseIdentifiers.ChecklistMainCell.rawValue)
         }
         
         let list = self.fetchedResultsController.objectAtIndexPath(indexPath) as! List
@@ -72,7 +72,7 @@ class ListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ReuseIdentifiers.CollectionCell, forIndexPath: indexPath) 
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ReuseIdentifiers.CollectionCell.rawValue, forIndexPath: indexPath)
         return cell
     }
 }

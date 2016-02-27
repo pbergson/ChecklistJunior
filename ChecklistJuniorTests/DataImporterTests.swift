@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import CoreData
+@testable import ChecklistJunior
 
 class DataImporterTests: XCTestCase {
     
@@ -21,11 +23,13 @@ class DataImporterTests: XCTestCase {
     }
     
     func testImportingPlist() {
-        let path = NSBundle.mainBundle().pathForResource("InitialData", ofType: "plist")
-        let importer = DataImporter()
-        let taskArray = importer.arrayFromPlist(path!)
-        XCTAssertNotNil(taskArray)
         
+        let managedObjectContext = EntityHelperForTests.makeManagedObjectContext()
+        let path = NSBundle.mainBundle().pathForResource("InitialData", ofType: "plist")
+        let importer = DataImporter(managedObjectContext: managedObjectContext)
+        
+        
+        //let fetchRequest = NSFetchRequest(entityName: )
         
     }
     

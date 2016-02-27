@@ -8,7 +8,14 @@
 
 import Foundation
 
-struct ReuseIdentifiers {
-    static let ChecklistMainCell = "ChecklistMainCell"
-    static let CollectionCell = "ChecklistCollectionCell"
+public enum ReuseIdentifiers : String {
+    case ChecklistMainCell = "ChecklistMainCell"
+    case CollectionCell = "ChecklistCollectionCell"
 }
+
+public enum EntityNames : String {
+    case Task = "Task"
+    case List = "List"
+}
+
+

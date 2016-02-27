@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     var listDataSource = ListDataSource()
     
     override func viewDidLoad() {
-        let faker = DataFaker()
-        faker.fakeListItem()
         self.tableView!.dataSource = listDataSource
         _ = CoreDataHelper.sharedCoreDataHelper()
         super.viewDidLoad()

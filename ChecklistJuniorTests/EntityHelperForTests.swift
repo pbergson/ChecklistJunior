@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+@testable import ChecklistJunior
 
 struct EntityHelperForTests {
     static func makeManagedObjectContext() -> NSManagedObjectContext {
