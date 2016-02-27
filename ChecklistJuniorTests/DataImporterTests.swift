@@ -27,9 +27,16 @@ class DataImporterTests: XCTestCase {
         let managedObjectContext = EntityHelperForTests.makeManagedObjectContext()
         let path = NSBundle.mainBundle().pathForResource("InitialData", ofType: "plist")
         let importer = DataImporter(managedObjectContext: managedObjectContext)
+        if let realPath = path {
+           importer.importDataFromPlist(realPath)
+        } else {
+            XCTFail("path for data import does not exist")
+        }
         
+        let fetchRequest = NSFetchRequest(entityName: EntityNames.Task.rawValue)
+        let fetchedTasks = try! managedObjectContext.executeFetchRequest(fetchRequest)
+        XCTAssert(fetchedTasks.count > 0)
         
-        //let fetchRequest = NSFetchRequest(entityName: )
         
     }
     

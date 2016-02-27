@@ -8,14 +8,22 @@
 
 import Foundation
 
-public enum ReuseIdentifiers : String {
+enum ReuseIdentifiers : String {
     case ChecklistMainCell = "ChecklistMainCell"
     case CollectionCell = "ChecklistCollectionCell"
 }
 
-public enum EntityNames : String {
+enum EntityNames : String {
     case Task = "Task"
     case List = "List"
 }
+
+enum PlistKeys : String {
+    case listIndex = "listIndex"
+    case taskName = "taskName"
+    case imageName = "imageName"
+}
+
+
 
 
