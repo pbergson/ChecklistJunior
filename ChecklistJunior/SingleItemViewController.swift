@@ -13,10 +13,8 @@ class SingleItemViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var taskLabel: UILabel!
-    //let tapGestureRecognizer = UITapGestureRecognizer()
     
     override func viewDidLoad() {
-        //tapGestureRecognizer.addTarget(self, action: "didReceiveTap:")
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "didReceiveTap:")
         self.view.addGestureRecognizer(tapGestureRecognizer)
