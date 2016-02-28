@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+@testable import ChecklistJunior
 
 struct EntityHelperForTests {
     static func makeManagedObjectContext() -> NSManagedObjectContext {
@@ -16,11 +17,14 @@ struct EntityHelperForTests {
         let modelURL = NSBundle.mainBundle().URLForResource("ChecklistJuniorModel", withExtension: "momd")
         if let validURL = modelURL {
             let model = NSManagedObjectModel(contentsOfURL: validURL)
-            managedObjectContext.persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model!)
+            let coordinator = NSPersistentStoreCoordinator(managedObjectModel: model!)//PB says crash operator
+            let _ = try! coordinator.addPersistentStoreWithType(NSInMemoryStoreType, configuration: nil, URL: nil, options: nil)
+            managedObjectContext.persistentStoreCoordinator = coordinator
+            
             return managedObjectContext
         } else {
             print("failed to make managed object context")
-            let emptyContext = NSManagedObjectContext()
+            let emptyContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
             return emptyContext
         }
     }

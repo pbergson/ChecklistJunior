@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>morningRoutine</key>
+	<array>
+		<dict>
+			<key>listIndex</key>
+			<string>3</string>
+			<key>imageName</key>
+			<string>shoes</string>
+			<key>taskName</key>
+			<string>Put on your shoes</string>
+		</dict>
+		<dict>
+			<key>listIndex</key>
+			<string>2</string>
+			<key>imageName</key>
+			<string>toothbrush</string>
+			<key>taskName</key>
+			<string>Brush your teeth</string>
+		</dict>
+		<dict>
+			<key>listIndex</key>
+			<string>1</string>
+			<key>imageName</key>
+			<string>clothing</string>
+			<key>taskName</key>
+			<string>Get dressed</string>
+		</dict>
+		<dict>
+			<key>listIndex</key>
+			<integer>0</integer>
+			<key>imageName</key>
+			<string>waffles</string>
+			<key>taskName</key>
+			<string>Eat breakfast</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -8,7 +8,22 @@
 
 import Foundation
 
-struct ReuseIdentifiers {
-    static let ChecklistMainCell = "ChecklistMainCell"
-    static let CollectionCell = "ChecklistCollectionCell"
+enum ReuseIdentifiers : String {
+    case ChecklistMainCell = "ChecklistMainCell"
+    case CollectionCell = "ChecklistCollectionCell"
 }
+
+enum EntityNames : String {
+    case Task = "Task"
+    case List = "List"
+}
+
+enum PlistKeys : String {
+    case listIndex = "listIndex"
+    case taskName = "taskName"
+    case imageName = "imageName"
+}
+
+
+
+

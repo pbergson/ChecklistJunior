@@ -9,6 +9,7 @@
 import UIKit
 import XCTest
 import CoreData
+@testable import ChecklistJunior
 
 class CoreDataHelperTests: XCTestCase {
 
@@ -24,7 +25,7 @@ class CoreDataHelperTests: XCTestCase {
 
     func testTaskFetchedResultsControllerReturnsTasks() {
         
-        let coreDataHelper = CoreDataHelper()
+        _ = CoreDataHelper()
     }
   
 
